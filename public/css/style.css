@@ -1,0 +1,2624 @@
+/* =====================================================
+   DASAR WEBSITE
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.website-navbar {
+    min-height: 68px;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    z-index: 1000;
+}
+
+.website-brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.website-brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.website-brand strong {
+    color: #111111;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #222222 !important;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 14px;
+    padding: 8px 0 !important;
+    transition: 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #2161e8 !important;
+}
+
+.login-button {
+    display: inline-block;
+    background: #2161e8;
+    color: #ffffff !important;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 8px 13px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background: #174fc7;
+    color: #ffffff !important;
+}
+
+
+/* =====================================================
+   HERO BERANDA
+===================================================== */
+
+.hero {
+    position: relative;
+    min-height: 410px;
+
+    background-image: url('../images/lapangan smkn4.JPG');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(18, 91, 205, 0.30);
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    color: #ffffff;
+    max-width: 650px;
+    padding: 50px 0;
+}
+
+.hero-small {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    max-width: 570px;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero-btn-primary,
+.hero-btn-secondary {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.hero-btn-primary {
+    background: #2161e8;
+    color: #ffffff !important;
+}
+
+.hero-btn-primary:hover {
+    background: #174fc7;
+}
+
+.hero-btn-secondary {
+    background: #ffffff;
+    color: #2161e8 !important;
+}
+
+.hero-btn-secondary:hover {
+    background: #f1f5ff;
+}
+
+
+/* =====================================================
+   TENTANG SEKOLAH - BERANDA
+===================================================== */
+
+.about-section {
+    padding: 65px 0;
+    background: #ffffff;
+}
+
+.about-title {
+    margin-bottom: 28px;
+}
+
+.about-title h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 7px;
+}
+
+.title-line {
+    width: 38px;
+    height: 3px;
+    background: #2161e8;
+    border-radius: 5px;
+}
+
+.about-text {
+    padding-right: 40px;
+}
+
+.about-text p {
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 13px;
+}
+
+
+/* =====================================================
+   FITUR BERANDA
+===================================================== */
+
+.about-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.about-feature {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 8px;
+}
+
+.about-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+
+    border-radius: 50%;
+
+    background: #eaf2ff;
+    color: #2161e8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.about-feature h5 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #222222;
+    margin: 0;
+}
+
+.about-feature p {
+    font-size: 10px;
+    color: #777777;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* =====================================================
+   PROGRAM KEAHLIAN
+===================================================== */
+
+.program-section {
+    background: #f8f9fb;
+    padding: 65px 0;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+}
+
+.program-card {
+    min-height: 230px;
+
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 10px;
+
+    padding: 25px 18px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.program-logo {
+    width: 90px;
+    height: 90px;
+
+    margin-bottom: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.program-card p {
+    font-size: 10px;
+    color: #777777;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* =====================================================
+   GALERI DI BERANDA
+===================================================== */
+
+.gallery-home-section {
+    padding: 65px 0 75px;
+    background: #ffffff;
+}
+
+.gallery-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.gallery-heading h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+}
+
+.gallery-heading a {
+    color: #2161e8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.gallery-heading a i {
+    margin-left: 4px;
+}
+
+.home-gallery-card {
+    height: 210px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #eeeeee;
+}
+
+.home-gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.home-gallery-card:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.website-footer {
+    background: #2161e8;
+    color: #ffffff;
+    padding: 28px 0 10px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-brand img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.footer-brand h5 {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.website-footer h6 {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.website-footer p {
+    color: #ffffff;
+    font-size: 7px;
+    line-height: 1.5;
+    margin: 0 0 2px;
+    opacity: 0.95;
+}
+
+.website-footer a {
+    color: #ffffff;
+    font-size: 7px;
+    text-decoration: none;
+    opacity: 0.95;
+}
+
+.website-footer a:hover {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 17px;
+    opacity: 1;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-top: 18px;
+    padding-top: 8px;
+    color: #ffffff;
+    font-size: 6px;
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   PROFIL - HERO
+===================================================== */
+
+.profil-hero {
+    position: relative;
+    min-height: 360px;
+
+    background-image: url('../images/smkn4 dulu.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.profil-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(33, 97, 232, 0.30);
+}
+
+.profil-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.profil-breadcrumb {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.profil-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.profil-hero p {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* =====================================================
+   PROFIL - SEJARAH
+===================================================== */
+
+.profil-content {
+    background: #ffffff;
+}
+
+.sejarah-section {
+    padding: 50px 0 30px;
+}
+
+.sejarah-section h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.profil-title-line {
+    width: 45px;
+    height: 4px;
+    background: #2161e8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sejarah-section p {
+    max-width: 1000px;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   PROFIL - VISI & MISI
+===================================================== */
+
+.visi-misi-profil {
+    padding: 5px 0 35px;
+}
+
+.profil-info-card {
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.profil-info-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #111111;
+
+    margin-bottom: 22px;
+}
+
+.profil-info-icon {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    color: #00b8b8;
+
+    font-size: 15px;
+}
+
+.misi-card .profil-info-icon {
+    color: #2161e8;
+}
+
+.profil-info-card p {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0 10px 0 25px;
+}
+
+.misi-card ul {
+    margin: 0;
+    padding-left: 28px;
+}
+
+.misi-card li {
+    font-size: 10px;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 7px;
+}
+
+.misi-card li::marker {
+    color: #2161e8;
+}
+
+
+/* =====================================================
+   PROFIL - SAMBUTAN KEPALA SEKOLAH
+===================================================== */
+
+.kepala-section {
+    padding: 0 0 35px;
+}
+
+.sambutan-card {
+    height: 100%;
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.sambutan-card h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 22px;
+}
+
+.sambutan-content p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    font-size: 11px;
+    line-height: 1.75;
+    color: #333333;
+
+    margin-bottom: 15px;
+}
+
+.sambutan-content p i {
+    color: #2161e8;
+    font-size: 7px;
+    margin-top: 7px;
+}
+
+.sambutan-content .nama-kepala {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   PROFIL - FOTO KEPALA SEKOLAH
+===================================================== */
+
+.kepala-photo-card {
+    height: 100%;
+    min-height: 260px;
+
+    background: #f4f4f4;
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.kepala-photo-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center bottom;
+
+    display: block;
+}
+
+
+/* =====================================================
+   GALERI - HERO
+===================================================== */
+
+.galeri-hero {
+    position: relative;
+    min-height: 300px;
+
+    background-image: url('../images/lapangan smkn 4.JPG');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.galeri-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(33, 97, 232, 0.30);
+}
+
+.galeri-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.galeri-breadcrumb {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.galeri-hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.galeri-hero p {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* =====================================================
+   GALERI - SECTION
+===================================================== */
+
+.galeri-section {
+    padding: 20px 0 55px;
+    background: #ffffff;
+}
+
+.galeri-section > .container {
+    max-width: 930px;
+}
+
+
+/* =====================================================
+   GALERI - FILTER
+===================================================== */
+
+.galeri-filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.galeri-filter-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 18px;
+
+    border: 1px solid #777777;
+    border-radius: 12px;
+
+    color: #111111;
+    background: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.galeri-filter-btn:hover,
+.galeri-filter-btn.active {
+    background: #2161e8;
+    border-color: #2161e8;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   GALERI - GRID
+===================================================== */
+
+.galeri-section .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 42px;
+    margin: 0;
+}
+
+.galeri-section .row > [class*="col-"] {
+    width: 100%;
+    padding: 0;
+}
+
+
+/* =====================================================
+   GALERI - CARD
+===================================================== */
+
+.galeri-card {
+    width: 100%;
+
+    background: #f4f4f4;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    border: none;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+
+    transition: 0.25s;
+}
+
+.galeri-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   GALERI - FOTO
+===================================================== */
+
+.galeri-card img {
+    width: calc(100% - 28px);
+    height: 282px;
+
+    margin: 14px;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    border-radius: 11px;
+}
+
+
+/* =====================================================
+   GALERI - JUDUL & KETERANGAN
+===================================================== */
+
+.galeri-info {
+    padding: 0 14px 17px;
+    text-align: center;
+}
+
+.galeri-info h5 {
+    color: #111111;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    margin: 0 0 7px;
+}
+
+.galeri-info p {
+    color: #777777;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   GALERI - SEMUA
+===================================================== */
+
+.galeri-card.semua-card {
+    background: transparent;
+    box-shadow: none;
+}
+
+.galeri-card.semua-card img {
+    margin: 0;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/* =====================================================
+   PROFIL FOOTER
+===================================================== */
+
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .website-navbar {
+        min-height: 65px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0 !important;
+    }
+
+    .login-button {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-features {
+        margin-top: 30px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE HP
+===================================================== */
+
+@media (max-width: 767px) {
+
+    /* NAVBAR */
+
+    .website-navbar {
+        min-height: 65px;
+    }
+
+
+    /* HERO BERANDA */
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-content {
+        padding: 40px 0;
+    }
+
+    .hero-small {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+
+    /* SECTION */
+
+    .about-section,
+    .program-section,
+    .gallery-home-section {
+        padding: 50px 0;
+    }
+
+    .about-title h2,
+    .section-heading h2,
+    .gallery-heading h2 {
+        font-size: 21px;
+    }
+
+
+    /* FITUR */
+
+    .about-features {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .about-feature {
+        gap: 8px;
+    }
+
+    .about-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        font-size: 14px;
+    }
+
+    .about-feature h5 {
+        font-size: 12px;
+    }
+
+    .about-feature p {
+        font-size: 9px;
+    }
+
+
+    /* PROGRAM */
+
+    .program-card {
+        min-height: 180px;
+    }
+
+
+    /* GALERI BERANDA */
+
+    .home-gallery-card {
+        height: 220px;
+    }
+
+    .gallery-heading {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+
+    /* PROFIL HERO */
+
+    .profil-hero {
+        min-height: 300px;
+    }
+
+    .profil-hero h1 {
+        font-size: 32px;
+    }
+
+    .profil-hero p {
+        font-size: 12px;
+    }
+
+
+    /* PROFIL SEJARAH */
+
+    .sejarah-section {
+        padding-top: 40px;
+    }
+
+    .sejarah-section h2 {
+        font-size: 22px;
+    }
+
+    .sejarah-section p {
+        font-size: 12px;
+    }
+
+
+    /* VISI MISI */
+
+    .profil-info-card h3 {
+        font-size: 18px;
+    }
+
+    .profil-info-card p,
+    .misi-card li {
+        font-size: 10px;
+    }
+
+
+    /* SAMBUTAN */
+
+    .sambutan-card h2 {
+        font-size: 19px;
+    }
+
+    .sambutan-content p {
+        font-size: 10px;
+    }
+
+    .kepala-photo-card {
+        min-height: 350px;
+    }
+
+
+    /* GALERI HERO */
+
+    .galeri-hero {
+        min-height: 280px;
+    }
+
+    .galeri-hero h1 {
+        font-size: 31px;
+    }
+
+    .galeri-hero p {
+        font-size: 12px;
+    }
+
+
+    /* GALERI */
+
+    .galeri-section {
+        padding: 25px 0 55px;
+    }
+
+    .galeri-section > .container {
+        max-width: 100%;
+    }
+
+    .galeri-section .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 22px;
+    }
+
+    .galeri-filter {
+        justify-content: flex-start;
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    .galeri-filter-btn {
+        font-size: 10px;
+        padding: 9px 13px;
+    }
+
+    .galeri-card img {
+        height: 300px;
+    }
+
+    .galeri-info {
+        padding: 0 13px 15px;
+    }
+
+    .galeri-info h5 {
+        font-size: 13px;
+    }
+
+    .galeri-info p {
+        font-size: 11px;
+    }
+
+
+    /* FOOTER */
+
+    .website-footer {
+        padding: 35px 0 12px;
+    }
+
+    .website-footer p,
+    .website-footer a {
+        font-size: 9px;
+    }
+
+    .website-footer h6 {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 7px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE HP KECIL
+===================================================== */
+
+@media (max-width: 575px) {
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-btn-primary,
+    .hero-btn-secondary {
+        font-size: 11px;
+    }
+
+    .website-brand strong {
+        font-size: 13px;
+    }
+
+    .about-features {
+        gap: 5px;
+    }
+
+    .about-feature h5 {
+        font-size: 11px;
+    }
+
+    .about-feature p {
+        font-size: 8px;
+    }
+
+
+    /* PROFIL */
+
+    .profil-hero h1 {
+        font-size: 29px;
+    }
+
+    .profil-hero p {
+        font-size: 11px;
+    }
+
+    .profil-breadcrumb {
+        font-size: 9px;
+    }
+
+
+    /* GALERI */
+
+    .galeri-hero h1 {
+        font-size: 28px;
+    }
+
+    .galeri-filter {
+        gap: 5px;
+    }
+
+    .galeri-filter-btn {
+        font-size: 8px;
+        padding: 6px 9px;
+    }
+
+    .galeri-section .row {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .galeri-card img {
+        height: 300px;
+    }
+
+    .galeri-info h5 {
+        font-size: 13px;
+    }
+
+    .galeri-info p {
+        font-size: 11px;
+    }
+}
+
+
+/* =====================================================
+   KONTAK - HERO
+===================================================== */
+
+.kontak-hero {
+    position: relative;
+    min-height: 270px;
+
+    background-image: url('../images/smkn4 dulu.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.kontak-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(33, 97, 232, 0.30);
+}
+
+.kontak-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    max-width: 550px;
+}
+
+.kontak-breadcrumb {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.kontak-hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.kontak-hero p {
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* =====================================================
+   KONTAK - SECTION
+===================================================== */
+
+.kontak-section {
+    padding: 35px 0 45px;
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   KONTAK - FORM
+===================================================== */
+
+.kontak-form-group {
+    margin-bottom: 13px;
+}
+
+.kontak-form-group label {
+    display: block;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    color: #222222;
+
+    margin-bottom: 6px;
+}
+
+.kontak-input {
+    height: 39px;
+
+    background: #f5f5f5;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 6px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+
+    padding: 10px 12px;
+}
+
+.kontak-input::placeholder,
+.kontak-textarea::placeholder {
+    color: #c7c7c7;
+}
+
+.kontak-input:focus,
+.kontak-textarea:focus {
+    border-color: #2161e8;
+    box-shadow: none;
+    background: #ffffff;
+}
+
+.kontak-textarea {
+    height: 78px;
+
+    resize: none;
+
+    background: #f5f5f5;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 6px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+
+    padding: 10px 12px;
+}
+
+.kontak-submit {
+    border: none;
+
+    background: #2161e8;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    padding: 9px 19px;
+
+    border-radius: 6px;
+
+    margin-top: 2px;
+
+    transition: 0.2s;
+}
+
+.kontak-submit:hover {
+    background: #174fc7;
+}
+
+
+/* =====================================================
+   KONTAK - INFORMASI
+===================================================== */
+
+.kontak-info {
+    padding-left: 5px;
+}
+
+.kontak-info h2 {
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #111111;
+
+    margin-bottom: 18px;
+}
+
+.kontak-info-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.kontak-info-icon {
+    width: 36px;
+    height: 36px;
+
+    min-width: 36px;
+
+    border-radius: 10px;
+
+    background: #eef4ff;
+
+    color: #2161e8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+.kontak-info-item h6 {
+    font-size: 9px;
+    font-weight: 600;
+
+    color: #222222;
+
+    margin: 0 0 4px;
+}
+
+.kontak-info-item p {
+    font-size: 8px;
+    line-height: 1.6;
+
+    color: #555555;
+
+    margin: 0;
+
+    max-width: 250px;
+}
+
+
+/* =====================================================
+   KONTAK - GOOGLE MAPS
+===================================================== */
+
+.kontak-map {
+    width: 100%;
+    height: 145px;
+
+    margin-top: 25px;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    background: #f4f4f4;
+}
+
+.kontak-map iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+
+/* =====================================================
+   KONTAK - RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .kontak-hero {
+        min-height: 280px;
+    }
+
+    .kontak-hero h1 {
+        font-size: 30px;
+    }
+
+    .kontak-hero p {
+        font-size: 10px;
+    }
+
+    .kontak-section {
+        padding: 35px 0 45px;
+    }
+
+    .kontak-info {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .kontak-map {
+        height: 180px;
+        margin-top: 30px;
+    }
+}
+
+
+/* =====================================================
+   ARTIKEL - HERO
+===================================================== */
+
+.artikel-hero {
+    position: relative;
+    min-height: 280px;
+
+    background-image: url('../images/smkn4 dulu.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artikel-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(33, 97, 232, 0.35);
+}
+
+.artikel-hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+.artikel-hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+
+    margin: 0 0 8px;
+}
+
+.artikel-hero p {
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* =====================================================
+   ARTIKEL - SECTION
+===================================================== */
+
+.artikel-section {
+    padding: 50px 0 65px;
+    background: #ffffff;
+}
+
+.artikel-section .row {
+    row-gap: 30px;
+}
+
+
+/* =====================================================
+   ARTIKEL - CARD
+===================================================== */
+
+.artikel-card {
+    height: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s ease;
+}
+
+.artikel-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   ARTIKEL - FOTO
+===================================================== */
+
+.artikel-card > img,
+.artikel-no-image {
+    width: 100%;
+    height: 210px;
+}
+
+.artikel-card > img {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.artikel-no-image {
+    background: #f1f1f1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #aaaaaa;
+
+    font-size: 40px;
+}
+
+
+/* =====================================================
+   ARTIKEL - ISI CARD
+===================================================== */
+
+.artikel-card-content {
+    padding: 20px 22px 22px;
+}
+
+.artikel-card-content h3 {
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #111111;
+
+    line-height: 1.4;
+
+    margin: 0 0 8px;
+}
+
+.artikel-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 10px;
+    color: #888888;
+
+    margin-bottom: 12px;
+}
+
+.artikel-date i {
+    color: #2161e8;
+}
+
+.artikel-card-content p {
+    font-size: 11px;
+
+    color: #666666;
+
+    line-height: 1.7;
+
+    margin: 0 0 14px;
+}
+
+
+/* =====================================================
+   ARTIKEL - LIHAT DETAIL
+===================================================== */
+
+.artikel-detail-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #2161e8;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.artikel-detail-link:hover {
+    color: #174fc7;
+}
+
+.artikel-detail-link i {
+    font-size: 9px;
+
+    transition: 0.2s;
+}
+
+.artikel-detail-link:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   ARTIKEL - EMPTY
+===================================================== */
+
+.artikel-empty {
+    padding: 60px 20px;
+
+    text-align: center;
+
+    color: #999999;
+}
+
+.artikel-empty i {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.artikel-empty p {
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/* =====================================================
+   ARTIKEL - DETAIL PAGE
+===================================================== */
+
+.artikel-detail-section {
+    padding: 45px 0 60px;
+    background: #ffffff;
+}
+
+.artikel-detail-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.artikel-detail-date {
+    font-size: 11px;
+    color: #888888;
+
+    margin-bottom: 10px;
+}
+
+.artikel-detail-title {
+    font-size: 30px;
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    color: #111111;
+
+    margin: 0 0 22px;
+}
+
+.artikel-detail-image {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+.artikel-detail-content {
+    font-size: 13px;
+    line-height: 1.9;
+
+    color: #333333;
+}
+
+.artikel-detail-content p {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   ARTIKEL - TOMBOL KEMBALI
+===================================================== */
+
+.artikel-back {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 30px;
+
+    background: #2161e8;
+
+    color: #ffffff !important;
+
+    padding: 9px 16px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.artikel-back:hover {
+    background: #174fc7;
+    color: #ffffff !important;
+}
+
+.artikel-back i {
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   ARTIKEL - RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .artikel-hero {
+        min-height: 230px;
+    }
+
+    .artikel-hero h1 {
+        font-size: 28px;
+    }
+
+    .artikel-hero p {
+        font-size: 10px;
+    }
+
+    .artikel-section {
+        padding: 35px 0 50px;
+    }
+
+    .artikel-card > img,
+    .artikel-no-image {
+        height: 200px;
+    }
+
+    .artikel-card-content {
+        padding: 17px 18px 20px;
+    }
+
+    .artikel-card-content h3 {
+        font-size: 15px;
+    }
+
+    .artikel-card-content p {
+        font-size: 10px;
+    }
+
+    .artikel-detail-section {
+        padding: 35px 0 45px;
+    }
+
+    .artikel-detail-title {
+        font-size: 24px;
+    }
+
+    .artikel-detail-image {
+        height: 250px;
+    }
+
+    .artikel-detail-content {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================================================
+   HALAMAN JURUSAN
+========================================================= */
+
+.jurusan-hero {
+    width: 100%;
+    min-height: 390px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.jurusan-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 35, 90, 0.92) 0%,
+        rgba(0, 45, 110, 0.70) 45%,
+        rgba(0, 0, 0, 0.10) 100%
+    );
+}
+
+.jurusan-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jurusan-hero-content {
+    color: #ffffff;
+    max-width: 620px;
+    padding: 45px 0;
+}
+
+.jurusan-hero-content small {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 8px;
+
+    font-weight: 600;}
+
+.jurusan-hero-content h1 {
+    font-size: 42px;
+    line-height: 1.08;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.jurusan-hero-content p {
+    font-size: 19px;
+    margin: 0;
+
+    font-weight: 500;}
+
+
+/* GAMBAR MASING-MASING JURUSAN */
+
+.pplg-hero {
+    background-image: url("../images/jurusan/pplg.png");
+}
+
+.tjkt-hero {
+    background-image: url("../images/jurusan/tjkt.png");
+}
+
+.tpfl-hero {
+    background-image: url("../images/jurusan/tpfl.png");
+}
+
+.to-hero {
+    background-image: url("../images/jurusan/to.png");
+}
+
+
+/* =========================================================
+   KONTEN JURUSAN
+========================================================= */
+
+.jurusan-content {
+    background: #ffffff;
+    padding: 25px 0 30px;
+}
+
+.jurusan-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 12px;
+}
+
+.jurusan-content > .container > p {
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #222222;
+    margin: 0;
+
+    font-weight: 500;}
+
+
+/* =========================================================
+   KARTU KOMPETENSI
+========================================================= */
+
+.jurusan-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.jurusan-skill-card {
+    min-height: 130px;
+    border: 1px solid #cfcfcf;
+    border-radius: 7px;
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 8px;
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #111111;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.jurusan-skill-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 4px;
+}
+
+.jurusan-skill-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+
+    font-weight: 500;}
+
+
+/* =========================================================
+   FOOTER JURUSAN
+========================================================= */
+
+.jurusan-footer {
+    background: #2864e8;
+    color: #ffffff;
+    padding: 22px 0 10px;
+}
+
+.jurusan-footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.footer-brand {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.jurusan-footer h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 7px;
+}
+
+.jurusan-footer p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+
+    font-weight: 500;}
+
+.footer-social {
+    white-space: nowrap;
+}
+
+.jurusan-copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    margin-top: 15px;
+    padding-top: 8px;
+    font-size: 14px;
+
+    font-weight: 500;}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .jurusan-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jurusan-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jurusan-hero {
+        min-height: 330px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .jurusan-hero {
+        min-height: 280px;
+    }
+
+    .jurusan-hero-content {
+        padding: 35px 15px;
+    }
+
+    .jurusan-hero-content h1 {
+        font-size: 27px;
+    }
+
+    .jurusan-skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .jurusan-footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .jurusan-hero {
+        min-height: 250px;
+    }
+
+    .jurusan-hero-content h1 {
+        font-size: 23px;
+    }
+
+    .jurusan-skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .jurusan-footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   DETAIL PROGRAM KEAHLIAN
+===================================================== */
+
+.program-detail {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    color: #2864e8;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.program-detail:hover {
+    color: #174dbd;
+    text-decoration: none;
+}
+
+.program-detail i {
+    font-size: 10px;
+    transition: 0.2s;
+}
+
+.program-detail:hover i {
+    transform: translateX(4px);
+}
+
+.jurusan-skill-card .skill-icon {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto 15px;
+    border: 2px solid #123b78;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.jurusan-skill-card .skill-icon i {
+    font-size: 30px;
+    color: #123b78;
+}
+
+/* =====================================================
+   PPLG - SESUAI DESAIN REFERENSI
+   Tambahan override khusus halaman jurusan
+===================================================== */
+
+.jurusan-page {
+    background: #ffffff;
+}
+
+/* =====================================================
+   HALAMAN JURUSAN
+===================================================== */
+
+/* NAVBAR JURUSAN */
+.jurusan-page .jurusan-navbar {
+    height: 105px;
+    min-height: 105px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.jurusan-page .jurusan-navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+.jurusan-page .jurusan-navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.jurusan-page .jurusan-navbar-brand img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.jurusan-page .jurusan-navbar-brand span {
+    color: #111111;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+/* HERO FOTO */
+.jurusan-page .jurusan-hero {
+    height: 350px;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Tidak menampilkan tulisan di atas foto */
+.jurusan-page .jurusan-hero-content {
+    display:  block;
+}
+
+/* TENTANG JURUSAN */
+.jurusan-page .jurusan-content {
+    padding: 58px 0 55px;
+    background: #ffffff;
+}
+
+.jurusan-page .jurusan-content .container {
+    max-width: 1060px;
+}
+
+.jurusan-page .jurusan-content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #111111;
+    margin: 0 0 27px;
+}
+
+.jurusan-page .jurusan-content > .container > p {
+    max-width: 1010px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #111111;
+    margin: 0 0 10px;
+}
+
+/* KARTU KOMPETENSI */
+.jurusan-page .jurusan-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 55px;
+}
+
+.jurusan-page .jurusan-skill-card {
+    box-sizing: border-box;
+    width: 100%;
+    height: 245px;
+    min-height: 245px;
+
+    border: 1px solid #333333;
+    border-radius: 14px;
+    background: #ffffff;
+
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+
+    padding: 22px 15px 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+}
+
+.jurusan-page .jurusan-skill-card .skill-icon {
+    width: 70px;
+    height: 70px;
+
+    border: none;
+    border-radius: 0;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 0 12px;
+}
+
+.jurusan-page .jurusan-skill-card .skill-icon i {
+    font-size: 52px;
+    color: #000000;
+}
+
+.jurusan-page .jurusan-skill-card h3 {
+    min-height: 25px;
+    margin: 0 0 6px;
+
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: #111111;
+}
+
+.jurusan-page .jurusan-skill-card p {
+    min-height: 44px;
+    max-width: 175px;
+
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 400;
+
+    color: #111111;
+}
+
+/* FOOTER JURUSAN */
+.jurusan-page .jurusan-footer {
+    background: #2864e8;
+    color: #ffffff;
+    padding: 32px 0 14px;
+}
+
+.jurusan-page .jurusan-footer .container {
+    max-width: 1060px;
+}
+
+.jurusan-page .jurusan-footer-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.jurusan-page .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.jurusan-page .footer-brand img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.jurusan-page .footer-brand strong {
+    display: block;
+
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.jurusan-page .jurusan-footer h4 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+.jurusan-page .jurusan-footer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.jurusan-page .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+    margin-top: 10px !important;
+}
+
+.jurusan-page .footer-social a {
+    color: #ffffff;
+    font-size: 0;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.jurusan-page .footer-social a i {
+    font-size: 29px;
+}
+
+.jurusan-page .jurusan-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 28px;
+    padding-top: 10px;
+
+    text-align: center;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* RESPONSIVE JURUSAN */
+@media (max-width: 1100px) {
+
+    .jurusan-page .jurusan-content .container,
+    .jurusan-page .jurusan-footer .container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .jurusan-page .jurusan-skills {
+        gap: 28px;
+    }
+
+    .jurusan-page .jurusan-footer-grid {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .jurusan-page .jurusan-navbar {
+        height: 76px;
+        min-height: 76px;
+    }
+
+    .jurusan-page .jurusan-navbar-brand img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .jurusan-page .jurusan-navbar-brand span {
+        font-size: 19px;
+    }
+
+    .jurusan-page .jurusan-hero {
+        height: 350px;
+        min-height: 350px;
+    }
+
+    .jurusan-page .jurusan-content {
+        padding: 55px 0;
+    }
+
+    .jurusan-page .jurusan-content h2 {
+        font-size: 27px;
+    }
+
+    .jurusan-page .jurusan-content > .container > p {
+        font-size: 17px;
+    }
+
+    .jurusan-page .jurusan-skills {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 60px;
+    }
+
+    .jurusan-page .jurusan-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+
+    .jurusan-page .jurusan-content .container,
+    .jurusan-page .jurusan-footer .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .jurusan-page .jurusan-navbar {
+        height: 75px;
+        min-height: 75px;
+    }
+
+    .jurusan-page .jurusan-navbar-brand img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .jurusan-page .jurusan-navbar-brand span {
+        font-size: 18px;
+    }
+
+    .jurusan-page .jurusan-hero {
+        height: 280px;
+        min-height: 280px;
+    }
+
+    .jurusan-page .jurusan-content h2 {
+        font-size: 25px;
+        margin-bottom: 24px;
+    }
+
+    .jurusan-page .jurusan-content > .container > p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .jurusan-page .jurusan-skills {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 45px;
+    }
+
+    .jurusan-page .jurusan-skill-card {
+        min-height: 210px;
+        height: 210px;
+        padding: 18px 10px;
+    }
+
+    .jurusan-page .jurusan-skill-card .skill-icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    .jurusan-page .jurusan-skill-card .skill-icon i {
+        font-size: 48px;
+    }
+
+    .jurusan-page .jurusan-skill-card h3 {
+        font-size: 17px;
+    }
+
+    .jurusan-page .jurusan-skill-card p {
+        font-size: 14px;
+        min-height: 42px;
+    }
+
+    .jurusan-page .jurusan-footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jurusan-page .footer-brand strong {
+        font-size: 21px;
+    }
+
+    .jurusan-page .jurusan-footer h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+}
