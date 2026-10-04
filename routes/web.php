@@ -241,6 +241,15 @@ Route::delete('/dashboard/kontak/{id}', function ($id) {
     return app(\App\Http\Controllers\PesanController::class)->destroy($id);
 });
 
+// =====================================================
+// HALAMAN UTAMA
+// =====================================================
+
+Route::get('/', function () {
+
+    return redirect('/beranda');
+
+});
 
 // =====================================================
 // BERANDA
