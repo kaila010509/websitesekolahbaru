@@ -43,7 +43,7 @@ class GaleriController extends Controller
             $namaGambar = time() . '_' . $gambar->getClientOriginalName();
 
             $gambar->move(
-                public_path('images/galeri'),
+                '/home/profilsmkn4my/public_html/images/galeri',
                 $namaGambar
             );
         }
@@ -87,14 +87,14 @@ class GaleriController extends Controller
         // Jika mengganti foto
         if ($request->hasFile('gambar')) {
 
+            $lokasiGambar = '/home/profilsmkn4my/public_html/images/galeri';
+
             if (
                 $galeri->gambar &&
-                file_exists(
-                    public_path('images/galeri/' . $galeri->gambar)
-                )
+                file_exists($lokasiGambar . '/' . $galeri->gambar)
             ) {
                 unlink(
-                    public_path('images/galeri/' . $galeri->gambar)
+                    $lokasiGambar . '/' . $galeri->gambar
                 );
             }
 
@@ -103,7 +103,7 @@ class GaleriController extends Controller
             $namaGambar = time() . '_' . $gambar->getClientOriginalName();
 
             $gambar->move(
-                public_path('images/galeri'),
+                $lokasiGambar,
                 $namaGambar
             );
         }
@@ -124,14 +124,14 @@ class GaleriController extends Controller
     {
         $galeri = Galeri::findOrFail($id);
 
+        $lokasiGambar = '/home/profilsmkn4my/public_html/images/galeri';
+
         if (
             $galeri->gambar &&
-            file_exists(
-                public_path('images/galeri/' . $galeri->gambar)
-            )
+            file_exists($lokasiGambar . '/' . $galeri->gambar)
         ) {
             unlink(
-                public_path('images/galeri/' . $galeri->gambar)
+                $lokasiGambar . '/' . $galeri->gambar
             );
         }
 
