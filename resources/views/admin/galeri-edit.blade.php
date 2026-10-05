@@ -101,13 +101,38 @@
                 Edit Foto
             </h4>
 
+            <!-- ADMIN PROFILE -->
             <div class="admin-profile">
 
-                <i class="fa-solid fa-circle-user"></i>
+                <div class="admin-profile-button" onclick="toggleAdminMenu()">
 
-                <strong>
-                    Admin
-                </strong>
+                    <i class="fa-solid fa-circle-user"></i>
+
+                    <strong>
+                        Admin
+                    </strong>
+
+                    <i class="fa-solid fa-caret-down"></i>
+
+                </div>
+
+                <div class="admin-dropdown" id="adminDropdown">
+
+                    <div class="admin-dropdown-title">
+                        Admin
+                    </div>
+
+                    <a href="/login">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>
+                            Logout
+                        </span>
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -200,6 +225,12 @@
                             <option value="Fasilitas"
                                 {{ $galeri->kategori == 'Fasilitas' ? 'selected' : '' }}>
                                 Fasilitas
+                            </option>
+
+                            <!-- PRODUK -->
+                            <option value="Produk"
+                                {{ $galeri->kategori == 'Produk' ? 'selected' : '' }}>
+                                Produk
                             </option>
 
                         </select>
@@ -302,6 +333,25 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function toggleAdminMenu() {
+    const dropdown = document.getElementById('adminDropdown');
+
+    dropdown.classList.toggle('show');
+}
+
+document.addEventListener('click', function(event) {
+
+    const profile = document.querySelector('.admin-profile');
+    const dropdown = document.getElementById('adminDropdown');
+
+    if (profile && !profile.contains(event.target)) {
+        dropdown.classList.remove('show');
+    }
+
+});
+</script>
 
 </body>
 

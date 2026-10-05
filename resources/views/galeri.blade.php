@@ -149,6 +149,12 @@
                     Fasilitas
                 </a>
 
+                {{-- PRODUK --}}
+                <a href="{{ url('/galeri?kategori=Produk') }}"
+                    class="galeri-filter-btn {{ request('kategori') == 'Produk' ? 'active' : '' }}">
+                    Produk
+                </a>
+
             </div>
 
 
@@ -166,7 +172,6 @@
                                 alt="{{ $item->judul }}"
                             >
 
-                            {{-- HANYA MUNCUL JIKA KATEGORI DIPILIH --}}
                             @if(request('kategori'))
 
                                 <div class="galeri-info">
@@ -176,9 +181,11 @@
                                     </h5>
 
                                     @if($item->keterangan)
+
                                         <p>
                                             {{ $item->keterangan }}
                                         </p>
+
                                     @endif
 
                                 </div>
@@ -215,119 +222,128 @@
     {{-- ================= FOOTER ================= --}}
     <footer class="website-footer">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="row align-items-start">
+            <div class="row align-items-start">
 
-            {{-- LOGO --}}
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                {{-- LOGO --}}
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
 
-                <div class="footer-brand">
+                    <div class="footer-brand">
 
-                    <img src="{{ asset('images/logo.svg') }}"
-                        alt="Logo SMKN 4">
+                        <img src="{{ asset('images/logo.svg') }}"
+                            alt="Logo SMKN 4">
 
-                    <h5>
-                        SMK Negeri 4
-                        <br>
-                        Kota Bogor
-                    </h5>
+                        <h5>
+                            SMK Negeri 4
+                            <br>
+                            Kota Bogor
+                        </h5>
+
+                    </div>
+
+                </div>
+
+
+                {{-- ALAMAT --}}
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+
+                    <h6>
+                        Alamat
+                    </h6>
+
+                    <p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=SMKN+4+Kota+Bogor"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Jalan Raya Tajur, Kampung Buntar,
+                            <br>
+                            RT 02 / RW 08, Kelurahan Muarasari,
+                            <br>
+                            Kecamatan Bogor Selatan, Kota Bogor,
+                            <br>
+                            Jawa Barat, kode pos 16137
+
+                        </a>
+                    </p>
+
+                </div>
+
+
+                {{-- KONTAK --}}
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+
+                    <h6>
+                        Kontak
+                    </h6>
+
+                    <p>
+                        <a href="tel:+628212262442">
+                            +62 821 226 2442
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="mailto:smkn4@smkn4bogor.sch.id">
+                            smkn4@smkn4bogor.sch.id
+                        </a>
+                    </p>
+
+                </div>
+
+
+                {{-- SOSIAL MEDIA --}}
+                <div class="col-lg-2 col-md-6">
+
+                    <h6>
+                        Ikuti Kami
+                    </h6>
+
+                    <div class="social-icons">
+
+                        <a href="https://www.instagram.com/smkn4kotabogor?stkn=MWIwY29oc3NyZHY3dg=="
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="https://youtube.com/@smknegeri4bogor905?si=C0qatYui4hdp2GdY"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </a>
+
+                        <a href="https://www.tiktok.com/@smkn4kotabogor?_r=1&_t=ZS-99pkHq8soJM"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-tiktok"></i>
+
+                        </a>
+
+                    </div>
 
                 </div>
 
             </div>
 
 
-            {{-- ALAMAT --}}
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            {{-- COPYRIGHT --}}
+            <div class="footer-bottom">
 
-                <h6>
-                    Alamat
-                </h6>
-
-                <p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=SMKN+4+Kota+Bogor"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Jalan Raya Tajur, Kampung Buntar,
-                        <br>
-                        RT 02 / RW 08, Kelurahan Muarasari,
-                        <br>
-                        Kecamatan Bogor Selatan, Kota Bogor,
-                        <br>
-                        Jawa Barat, kode pos 16137
-                    </a>
-                </p>
-
-            </div>
-
-
-            {{-- KONTAK --}}
-            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-
-                <h6>
-                    Kontak
-                </h6>
-
-                <p>
-                    <a href="tel:+628212262442">
-                        +62 821 226 2442
-                    </a>
-                </p>
-
-                <p>
-                    <a href="mailto:smkn4@smkn4bogor.sch.id">
-                        smkn4@smkn4bogor.sch.id
-                    </a>
-                </p>
-
-            </div>
-
-
-            {{-- SOSIAL MEDIA --}}
-            <div class="col-lg-2 col-md-6">
-
-                <h6>
-                    Ikuti Kami
-                </h6>
-
-                <div class="social-icons">
-
-                    <a href="https://www.instagram.com/smkn4kotabogor?stkn=MWIwY29oc3NyZHY3dg=="
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="https://youtube.com/@smknegeri4bogor905?si=C0qatYui4hdp2GdY"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                    <a href="https://www.tiktok.com/@smkn4kotabogor?_r=1&_t=ZS-99pkHq8soJM"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-
-                </div>
+                Copyright © {{ date('Y') }} - SMKN 4 Kota Bogor
 
             </div>
 
         </div>
 
+    </footer>
 
-        {{-- COPYRIGHT --}}
-        <div class="footer-bottom">
-
-            Copyright © {{ date('Y') }} - SMKN 4 Kota Bogor
-
-        </div>
-
-    </div>
-
-</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

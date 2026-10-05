@@ -26,7 +26,10 @@ class GaleriController extends Controller
     {
         $request->validate([
             'judul' => 'required|string|max:255',
-            'kategori' => 'required|in:Kegiatan,Prestasi,Ekstrakurikuler,Fasilitas',
+
+            // Produk ditambahkan di sini
+            'kategori' => 'required|in:Kegiatan,Prestasi,Ekstrakurikuler,Fasilitas,Produk',
+
             'gambar' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048',
             'keterangan' => 'nullable|string',
         ]);
@@ -34,6 +37,7 @@ class GaleriController extends Controller
         $namaGambar = null;
 
         if ($request->hasFile('gambar')) {
+
             $gambar = $request->file('gambar');
 
             $namaGambar = time() . '_' . $gambar->getClientOriginalName();
@@ -70,7 +74,10 @@ class GaleriController extends Controller
 
         $request->validate([
             'judul' => 'required|string|max:255',
-            'kategori' => 'required|in:Kegiatan,Prestasi,Ekstrakurikuler,Fasilitas',
+
+            // Produk juga ditambahkan di sini
+            'kategori' => 'required|in:Kegiatan,Prestasi,Ekstrakurikuler,Fasilitas,Produk',
+
             'gambar' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
             'keterangan' => 'nullable|string',
         ]);
